@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./web-images/favicon-img.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/mobile.css">
+    <title>Space Kit - Webflow HTML website template</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <img class="logo" src="./web-images/logo.svg" alt="">
+        <div class="navpages ">
+            <a href="">Home</a>
+            <a href="">Products</a>
+            <a href="">FAQ</a>
+            <button class="contact">Contact Us</button>
+        </div>
+        <img class="hamburger" src="./web-images/hamburger-img.png" alt="" onclick="phonenavbar()">
+        <!-- mobile shutter -->
+    </div>
+    <div class="shutter-box">
+    </div>
+    <div class="navpages-mobile  navpages-close" id="hamburger">
+        <a onclick="">Home</a>
+        <a href="">Products</a>
+        <a href="">FAQ</a>
+        <button class="contact">Contact Us
+        </button>
+    </div>
+
+    <div class="container1">
+        <div class="bgimage1"></div>
+        <div class="con1data">
+            <div class="moreprdt">
+                <div class="more">
+                    <a href="" class="moreleft">More Products</a>
+                    <p>|</p>
+                    <a class="seemore">See more </a>
+                </div>
+                <img class="rightarrow" src="./web-images/right-arrow.png" alt="">
+            </div>
+
+            <p class="con1text">Your Next Adventure <span> Starts With Us</span></p>
+            <div class="staycircle" onmouseenter="makeanimate()">
+                <img src="./web-images/stay-img.svg" alt="">
+            </div>
+            <div class="downarrow">
+                <div class="downarrow-beta">
+                    <img src="./web-images/down-arrow.svg" alt="">
+                    <img src="./web-images/down-arrow.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="price-dots">
+            <div class="pricetag-nomad">
+                <div class="price-details">
+                    <div class="urban-nomad">
+                        <p>Urban Nomad</p>
+                        <p>$26.00 USD</p>
+                    </div>
+                    <div class="price-arrow">
+                        <div class="price-arrowbeta">
+                            <img src="./web-images/down-arrow.svg" alt="">
+                            <img src="./web-images/down-arrow.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pricetag-voyager">
+                <div class="price-details2">
+                    <div class="urban-nomad2">
+                        <p>The Voyager</p>
+                        <p>$26.00 USD</p>
+                    </div>
+                    <div class="price-arrow2">
+                        <div class="price-arrowbeta2">
+                            <img src="./web-images/down-arrow.svg" alt="">
+                            <img src="./web-images/down-arrow.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pricetag-minibag">
+                <div class="price-details3">
+                    <div class="urban-nomad3">
+                        <p>Minion</p>
+                        <p>$26.00 USD</p>
+                    </div>
+                    <div class="price-arrow3">
+                        <div class="price-arrowbeta3">
+                            <img src="./web-images/down-arrow.svg" alt="">
+                            <img src="./web-images/down-arrow.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nomad-pro">
+                <div class="price-details4">
+                    <div class="urban-nomad4">
+                        <p>Nomad Pro</p>
+                        <p>$26.00 USD</p>
+                    </div>
+                    <div class="price-arrow4">
+                        <div class="price-arrowbeta4">
+                            <img src="./web-images/down-arrow.svg" alt="">
+                            <img src="./web-images/down-arrow.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="con2slider">
+            <div class="f-round">fh</div>
+            <span>DESIGNED FOR YOUR EVERYDAY ADVENTURES</span>
+            <div>fh</div>
+            <span>DESIGNED FOR YOUR EVERYDAY ADVENTURES</span>
+        </div>
+        <p class="con2middle">Explore our curated collection <span> of high-quality products</span></p>
+        <p class="con2end">Whether you're looking for a stylish new bag, a captivating book, or a <span> perfect mug for
+                your morning brew, we've got you covered.</span></p>
+    </div>
+    <div class="container3">
+        <div class="con3img1">
+            <img class="bagimg" src="./web-images/bag-img.jpg" alt="">
+        </div>
+        <div class="con3img2" onmouseenter="rightarrenter('.seedetails')" onmouseleave="rightarrleave('.seedetails')">
+            <div class="cupsdata">
+                <p class="con3text1"> <span>Lightweight, durable, and perfect for <br> any journey with our
+                        premium</span>
+                    <a class="seedetails" href=""><span>See Details</span>
+                        <img class="rightarrow2" src="./web-images/right-arrow.png" alt=""></a>
+                </p>
+            </div>
+            <img class="cupsimg" src="./web-images/cup-img.jpg" alt="">
+        </div>
+        <div class="con3img3" onmouseenter="rightarrenter('.seedetails2')" onmouseleave="rightarrleave('.seedetails2')">
+            <img class="bookimg" src="./web-images/book-img.jpg" alt="">
+            <div class="img3-text">
+                <p>Tools to stay organized and on top of your goals every day.</p><a class="seedetails2"
+                    href=""><span>Plan Ahead</span>
+                    <img class="rightarrow2" src="./web-images/right-arrow.png" alt=""></a>
+            </div>
+        </div>
+        <div class="con3img4" onmouseenter="rightarr3enter()" onmouseleave="rightarr3leave()">
+            <img class="whitebag" src="./web-images/white-bag.jpg" alt="">
+            <div class="morebags">
+                <button class="morebagbtn"><span>LEARN MORE</span> <img class="right-arr3"
+                        src="./web-images/right-arrow.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+    <div class="blank1"></div>
+    <div class="container4">
+        <div class="con4left">
+            <img class="plantimg" src="./web-images/plant-img.jpg" alt="">
+        </div>
+        <div class="con4right">
+            <img class="leftbag-img" src="./web-images/left-bag.jpg" alt="">
+            <div class="con4-box">
+                <div class="boxdata">
+                    <span>IDEAL FOR QUIET EVENNGS</span>
+                    <span>Mindful Living <br> in Every Page</span>
+                    <span>Whether you're looking to reflect on your past, gain clarity on your goals, or simply find a
+                        few moments of calm in your busy day, this beautifully designed guide will inspire and motivate.
+                        <br> <br>
+                        Let Journey Within be the companion that helps you navigate life’s ups and downs with grace and
+                        mindfulness.</span>
+                </div>
+            </div>
+            <div class="con4-box2">
+                <img class="book-penimg" src="./web-images/book-pen.jpg" alt="">
+                <img class="man-bagimg" src="./web-images/man-bag.jpg" alt="">
+            </div>
+            <div class="con4-box3">
+                <span>QUALITY,SIMPLICITY, AND COMFORT</span>
+                <span>Simplicity Meets Sophistication</span>
+                <span>Designed for those who appreciate the finer things in life, this mug combines functionality with
+                    sleek, modern design. Its smooth ceramic surface is easy to clean and resistant to stains, while the
+                    comfortable handle ensures a perfect grip every time.
+                    <br> <br>
+                    Whether you're enjoying a quiet morning at home or a quick break at the office, the Morning Brew Mug
+                    adds a touch of sophistication to your daily routine.</span>
+                <img class="one-cupimg" src="./web-images/onecup-img.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--------------------mobile containers-------------------->
+
+    <div class="con3-mobile">
+
+        <!-- ---------con3img1-mob---------->
+        <div class="cupsdata-mob">
+            <p class="con3text1-mob"> <span>Lightweight, durable, and perfect for any journey with our
+                    premium</span>
+                <a class="seedetails" href=""><span>See Details</span>
+                    <img class="rightarrow2" src="./web-images/right-arrow.png" alt=""></a>
+            </p>
+            <img class="cupsimg-mob" src="./mob-images/cup-img.jpg" alt="">
+        </div>
+        <div class="con3img2-mob">
+            <img class="bagimg-mob" src="./web-images/bag-img.jpg" alt="">
+        </div>
+        <div class="con3img3-mob">
+            <img class="bookimg-mob" src="./mob-images/book-img.jpg" alt="">
+            <div class="img3-textmob">
+                <p>Tools to stay organized and on top of your goals every day.</p><a class="seedetails2"
+                    href=""><span>Plan Ahead</span>
+                    <img class="rightarrow2" src="./web-images/right-arrow.png" alt=""></a>
+            </div>
+        </div>
+        <div class="con3img4-mob">
+            <img class="whitebag-mob" src="./mob-images/white-bag.jpg" alt="">
+            <div class="morebags-mob">
+                <button class="morebagbtn-mob"><span>LEARN MORE</span> <img class="right-arr3"
+                        src="./web-images/right-arrow.png" alt=""></button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="con4-mobile">
+        <div class="con4mob-imgs">
+            <img class="plantimg-mob" src="./mob-images/plant-imgmob.jpg" alt="">
+            <img class="leftbag-mob" src="./mob-images/left-bagmob.jpg" alt="">
+
+            <!-- <div class="con4-box-mob"> -->
+            <div class="boxdata-mob">
+                <span>IDEAL FOR QUIET EVENNGS</span>
+                <span>Mindful Living in Every Page</span>
+                <span>Whether you're looking to reflect on your past, gain clarity on your goals, or simply find a
+                    few moments of calm in your busy day, this beautifully designed guide will inspire and motivate.
+                    <br> <br>
+                    Let Journey Within be the companion that helps you navigate life’s ups and downs with grace and
+                    mindfulness.</span>
+            </div>
+            <!-- </div> -->
+            <div class="con4-box2-mob">
+                <img class="book-penimg" src="./web-images/book-pen.jpg" alt="">
+                <img class="man-bagmob" src="./mob-images/manbag-mob.jpg" alt="">
+            </div>
+            <div class="con4-box3-mob">
+                <span>QUALITY,SIMPLICITY, AND COMFORT</span>
+                <span>Simplicity Meets Sophistication</span>
+                <span>Designed for those who appreciate the finer things in life, this mug combines functionality
+                    with
+                    sleek, modern design. Its smooth ceramic surface is easy to clean and resistant to stains, while
+                    the
+                    comfortable handle ensures a perfect grip every time.
+                    <br> <br>
+                    Whether you're enjoying a quiet morning at home or a quick break at the office, the Morning Brew
+                    Mug
+                    adds a touch of sophistication to your daily routine.</span>
+                <img class="one-cupimg-mob" src="./web-images/onecup-img.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -------------mobile-containers-end-------------- -->
+
+    <div class="container5">
+        <div class="our-products"> <img class="crossimg" src="./web-images/cross-img.png" alt="">
+            <h2>OUR PRODUCTS</h2>
+            <p>ALL collection</p>
+        </div>
+        <button class="con5-shopnow">SHOP NOW</button>
+    </div>
+
+    <div class="container6">
+        <div class="explore-bag">
+            <div class="exp-img">
+                <img class="explore-bagimg" src="./web-images/explore-bag.jpg" alt="">
+            </div>
+            <div class="about-explorebag">
+                <p class="exp-p1"><span>EXPLORER BAG</span>
+                    <span>WHITE/BLACK</span>
+                </p>
+                <P>$26</P>
+            </div>
+        </div>
+        <div class="explore-bag">
+            <div class="exp-img">
+                <img class="explore-bagimg" src="./web-images/journey-book.jpg" alt="">
+            </div>
+            <div class="about-explorebag">
+                <p class="exp-p1"><span>JOURNEY WITHIN BOOK</span>
+                    <span>WHITE/ORANGE</span>
+                </p>
+                <P>$12</P>
+            </div>
+        </div>
+        <div class="explore-bag">
+            <div class="exp-img">
+                <img class="explore-bagimg" src="./web-images/2cups-img.jpg" alt="">
+            </div>
+            <div class="about-explorebag">
+                <p class="exp-p1"><span>EXPLORER BAG</span>
+                    <span>WHITE/BLACK</span>
+                </p>
+                <P>$32</P>
+            </div>
+        </div>
+    </div>
+
+    <div class="container7">
+        <div class="faq-title">
+            <p>Frequently asked questions</p>
+        </div>
+
+        <div class="faq-q1" onclick="faq1data()">
+            <div class="q1">
+                <p>What’s the quality of your products?</p> <img class="downcut-img" src="./web-images/down-cut.svg"
+                    alt="">
+            </div>
+            <div class="q1-ans">
+                <p>We prioritize quality in every item we sell. Our products are designed to be durable, functional, and
+                    stylish.</p>
+
+            </div>
+        </div>
+
+        <div class="faq-q2" onclick="faq2data()">
+            <div class="q2">
+                <p>Do you offer returns?</p> <img class="downcut2-img" src="./web-images/down-cut.svg" alt="">
+            </div>
+            <div class="q2-ans">
+                <p>Yes! If you're not 100% satisfied with your purchase, we offer a 30-day return policy on all
+                    products.</p>
+
+            </div>
+        </div>
+
+        <div class="faq-q3" onclick="faq3data()">
+            <div class="q3">
+                <p>Do you ship internationally?</p> <img class="downcut3-img" src="./web-images/down-cut.svg" alt="">
+            </div>
+            <div class="q3-ans">
+                <p>Absolutely. We offer worldwide shipping, so you can enjoy our products no matter where you are.</p>
+
+            </div>
+        </div>
+
+        <div class="faq-q4" onclick="faq4data()">
+            <div class="q4">
+                <p>How long will my order take to arrive?</p> <img class="downcut4-img" src="./web-images/down-cut.svg"
+                    alt="">
+            </div>
+            <div class="q4-ans">
+                <p>Shipping times vary by location, but we aim to deliver within 5-10 business days for most orders.</p>
+            </div>
+        </div>
+
+        <div class="faq-q5" onclick="faq5data()">
+            <div class="q5">
+                <p>Are your products environmentally friendly?</p> <img class="downcut5-img"
+                    src="./web-images/down-cut.svg" alt="">
+            </div>
+            <div class="q5-ans">
+                <p>We are committed to sustainability and use eco-friendly materials whenever possible in the production
+                    and packaging of our products.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-up">
+                <img class="footer-logo" src="./web-images/logo.svg" alt="">
+
+                <div class="footerup-middle">
+                    <ul>
+                        <li>Explore</li>
+                        <li>Home</li>
+                        <li>Products</li>
+                    </ul>
+                    <ul>
+                        <li>Support</li>
+                        <li>FAQ</li>
+                        <li>Contact</li>
+                    </ul>
+                    <ul>
+                        <li>Others</li>
+                        <li>Style Guide</li>
+                        <li>Changelog</li>
+                    </ul>
+                    <ul>
+                        <li>Utility</li>
+                        <li>Instruction</li>
+                        <li>License</li>
+                    </ul>
+
+                </div>
+                <div class="footerup-imgs">
+                    <img class="twitter-pic" height="35px" src="./web-images/twitter-img.png" alt="">
+                    <img class="twitter-pic" height="35px" src="./web-images/fb-img.png" alt="">
+                    <img class="twitter-pic" height="35px" src="./web-images/insta-img.png" alt="">
+                    <img class="twitter-pic" height="35px" src="./web-images/github-img.png" alt="">
+                </div>
+            </div>
+            <div class="footer-end">
+                <p class="ft-end1"><span>License</span>
+                    |
+                    <span>Style Guide</span>
+                    |
+                    <span>Customize</span>
+                </p>
+                <p class="ft-end2">
+                    <span>Copyright ©</span>
+
+                    <span>Design & Developed by
+                        <span class="dev-name">Chetan Gautam</span>
+                    </span>
+
+
+                    <span>Powered by
+                        <span class="powered-name">Webflow</span></span>
+                </p>
+            </div>
+
+        </div>
+        <script src="./script.js"></script>
+</body>
+
+</html>
