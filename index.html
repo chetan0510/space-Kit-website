@@ -15,20 +15,20 @@
     <div class="navbar">
         <img class="logo" src="./web-images/logo.svg" alt="">
         <div class="navpages ">
-            <a href="">Home</a>
-            <a href="">Products</a>
-            <a href="">FAQ</a>
+            <a href="/">Home</a>
+            <a href="./product-pages/allprdts.html">Products</a>
+            <a href="./product-pages/faq.html">FAQ</a>
             <button class="contact">Contact Us</button>
         </div>
         <img class="hamburger" src="./web-images/hamburger-img.png" alt="" onclick="phonenavbar()">
-        <!-- mobile shutter -->
     </div>
+    <!-- mobile shutter -->
     <div class="shutter-box">
     </div>
     <div class="navpages-mobile  navpages-close" id="hamburger">
         <a onclick="">Home</a>
         <a href="">Products</a>
-        <a href="">FAQ</a>
+        <a href="./product-pages/faq.html" onclick="window.location.href=''">FAQ</a>
         <button class="contact">Contact Us
         </button>
     </div>
@@ -36,7 +36,7 @@
     <div class="container1">
         <div class="bgimage1"></div>
         <div class="con1data">
-            <div class="moreprdt">
+            <div class="moreprdt" onclick="window.location.href='./product-pages/allprdts.html'" >
                 <div class="more">
                     <a href="" class="moreleft">More Products</a>
                     <p>|</p>
@@ -130,17 +130,17 @@
         <div class="con3img1">
             <img class="bagimg" src="./web-images/bag-img.jpg" alt="">
         </div>
-        <div class="con3img2" onmouseenter="rightarrenter('.seedetails')" onmouseleave="rightarrleave('.seedetails')">
+        <div class="con3img2" onmouseenter="rightarrenter('.seedetails')" onmouseleave="rightarrleave('.seedetails')" onclick="window.location.href='./product-pages/allprdts.html'">
             <div class="cupsdata">
                 <p class="con3text1"> <span>Lightweight, durable, and perfect for <br> any journey with our
                         premium</span>
-                    <a class="seedetails" href=""><span>See Details</span>
+                    <a class="seedetails" href="./product-pages/allprdts.html"><span>See Details</span>
                         <img class="rightarrow2" src="./web-images/right-arrow.png" alt=""></a>
                 </p>
             </div>
             <img class="cupsimg" src="./web-images/cup-img.jpg" alt="">
         </div>
-        <div class="con3img3" onmouseenter="rightarrenter('.seedetails2')" onmouseleave="rightarrleave('.seedetails2')">
+        <div class="con3img3" onmouseenter="rightarrenter('.seedetails2')" onmouseleave="rightarrleave('.seedetails2')" onclick="window.location.href='./product-pages/allprdts.html'">
             <img class="bookimg" src="./web-images/book-img.jpg" alt="">
             <div class="img3-text">
                 <p>Tools to stay organized and on top of your goals every day.</p><a class="seedetails2"
@@ -148,10 +148,10 @@
                     <img class="rightarrow2" src="./web-images/right-arrow.png" alt=""></a>
             </div>
         </div>
-        <div class="con3img4" onmouseenter="rightarr3enter()" onmouseleave="rightarr3leave()">
+        <div class="con3img4" onmouseenter="rightarr3enter()" onmouseleave="rightarr3leave()" >
             <img class="whitebag" src="./web-images/white-bag.jpg" alt="">
             <div class="morebags">
-                <button class="morebagbtn"><span>LEARN MORE</span> <img class="right-arr3"
+                <button class="morebagbtn" onclick="window.location.href='./product-pages/allprdts.html'"><span>LEARN MORE</span> <img class="right-arr3"
                         src="./web-images/right-arrow.png" alt=""></button>
             </div>
         </div>
@@ -271,7 +271,7 @@
             <h2>OUR PRODUCTS</h2>
             <p>ALL collection</p>
         </div>
-        <button class="con5-shopnow">SHOP NOW</button>
+        <button class="con5-shopnow" onclick="window.location.href='./product-pages/allprdts.html'">SHOP NOW</button>
     </div>
 
     <div class="container6">
@@ -303,7 +303,7 @@
             </div>
             <div class="about-explorebag">
                 <p class="exp-p1"><span>EXPLORER BAG</span>
-                    <span>WHITE/BLACK</span>
+                    <span>WHITE/ORANGE</span>
                 </p>
                 <P>$32</P>
             </div>
@@ -368,6 +368,7 @@
                     and packaging of our products.</p>
             </div>
         </div>
+        </div>
 
         <div class="footer">
             <div class="footer-up">
@@ -417,14 +418,25 @@
                         <span class="dev-name">Chetan Gautam</span>
                     </span>
 
-
-                    <span>Powered by
-                        <span class="powered-name">Webflow</span></span>
                 </p>
             </div>
 
         </div>
         <script src="./script.js"></script>
 </body>
+    <!-- <script src="https://unpkg.com/@studio-freight/lenis@latest/dist/lenis.min.js"></script>
+        <script>
+            const lenis = new Lenis({
+                smooth: true,  
+                lerp: 0.1,    
+                duration: 1.2,
+                wheelMultiplier: 1.2,
+            });
 
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+        </script> -->
 </html>
