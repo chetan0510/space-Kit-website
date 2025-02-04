@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./web-images/favicon-img.png" type="image/x-icon">
-    
+
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="/mobile.css">
+
     <title>Space Kit</title>
 </head>
 
@@ -18,7 +19,8 @@
             <a href="/">Home</a>
             <a href="./product-pages/allprdts.html">Products</a>
             <a href="./product-pages/faq.html">FAQ</a>
-            <button class="contact">Contact Us</button>
+            <a href="./contact.html"><button class="contact">Contact Us
+                </button></a>
         </div>
         <img class="hamburger" src="./web-images/hamburger-img.png" alt="" onclick="phonenavbar()">
     </div>
@@ -36,7 +38,7 @@
     <div class="container1">
         <div class="bgimage1"></div>
         <div class="con1data">
-            <div class="moreprdt" onclick="window.location.href='./product-pages/allprdts.html'" >
+            <div class="moreprdt" onclick="window.location.href='./product-pages/allprdts.html'">
                 <div class="more">
                     <a href="" class="moreleft">More Products</a>
                     <p>|</p>
@@ -130,7 +132,8 @@
         <div class="con3img1">
             <img class="bagimg" src="./web-images/bag-img.jpg" alt="">
         </div>
-        <div class="con3img2" onmouseenter="rightarrenter('.seedetails')" onmouseleave="rightarrleave('.seedetails')" onclick="window.location.href='./product-pages/allprdts.html'">
+        <div class="con3img2" onmouseenter="rightarrenter('.seedetails')" onmouseleave="rightarrleave('.seedetails')"
+            onclick="window.location.href='./product-pages/allprdts.html'">
             <div class="cupsdata">
                 <p class="con3text1"> <span>Lightweight, durable, and perfect for <br> any journey with our
                         premium</span>
@@ -140,7 +143,8 @@
             </div>
             <img class="cupsimg" src="./web-images/cup-img.jpg" alt="">
         </div>
-        <div class="con3img3" onmouseenter="rightarrenter('.seedetails2')" onmouseleave="rightarrleave('.seedetails2')" onclick="window.location.href='./product-pages/allprdts.html'">
+        <div class="con3img3" onmouseenter="rightarrenter('.seedetails2')" onmouseleave="rightarrleave('.seedetails2')"
+            onclick="window.location.href='./product-pages/allprdts.html'">
             <img class="bookimg" src="./web-images/book-img.jpg" alt="">
             <div class="img3-text">
                 <p>Tools to stay organized and on top of your goals every day.</p><a class="seedetails2"
@@ -148,16 +152,16 @@
                     <img class="rightarrow2" src="./web-images/right-arrow.png" alt=""></a>
             </div>
         </div>
-        <div class="con3img4" onmouseenter="rightarr3enter()" onmouseleave="rightarr3leave()" >
+        <div class="con3img4" onmouseenter="rightarr3enter()" onmouseleave="rightarr3leave()">
             <img class="whitebag" src="./web-images/white-bag.jpg" alt="">
             <div class="morebags">
-                <button class="morebagbtn" onclick="window.location.href='./product-pages/allprdts.html'"><span>LEARN MORE</span> <img class="right-arr3"
-                        src="./web-images/right-arrow.png" alt=""></button>
+                <button class="morebagbtn" onclick="window.location.href='./product-pages/allprdts.html'"><span>LEARN
+                        MORE</span> <img src="./web-images/right-arrow.png" alt=""></button>
             </div>
         </div>
     </div>
     <div class="blank1"></div>
-    <div class="container4">
+    <div class="container4" data-lenis-prevent>
         <div class="con4left">
             <img class="plantimg" src="./web-images/plant-img.jpg" alt="">
         </div>
@@ -275,7 +279,7 @@
     </div>
 
     <div class="container6">
-        <div class="explore-bag">
+        <div class="explore-bag" onclick="window.location.href='./product-pages/explorebag.html'">
             <div class="exp-img">
                 <img class="explore-bagimg" src="./web-images/explore-bag.jpg" alt="">
             </div>
@@ -286,7 +290,7 @@
                 <P>$26</P>
             </div>
         </div>
-        <div class="explore-bag">
+        <div class="explore-bag" onclick="window.location.href='./product-pages/journeybook.html'">
             <div class="exp-img">
                 <img class="explore-bagimg" src="./web-images/journey-book.jpg" alt="">
             </div>
@@ -297,7 +301,7 @@
                 <P>$12</P>
             </div>
         </div>
-        <div class="explore-bag">
+        <div class="explore-bag" onclick="window.location.href='./product-pages/twocups.html'">
             <div class="exp-img">
                 <img class="explore-bagimg" src="./web-images/2cups-img.jpg" alt="">
             </div>
@@ -368,75 +372,86 @@
                     and packaging of our products.</p>
             </div>
         </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-up">
+            <img class="footer-logo" src="./web-images/logo.svg" alt="">
+
+            <div class="footerup-middle">
+                <ul>
+                    <li>Explore</li>
+                    <li onclick="window.location.href='/'">Home</li>
+                    <li onclick="window.location.href='./product-pages/allprdts.html'">Products</li>
+                </ul>
+                <ul>
+                    <li>Support</li>
+                    <li onclick="window.location.href='./product-pages/faq.html'">FAQ</li>
+                    <li>Contact</li>
+                </ul>
+                <ul>
+                    <li>Others</li>
+                    <li>Style Guide</li>
+                    <li>Changelog</li>
+                </ul>
+                <ul>
+                    <li>Utility</li>
+                    <li>Instruction</li>
+                    <li>License</li>
+                </ul>
+
+            </div>
+            <div class="footerup-imgs">
+                <a href="https://x.com/Realiizzz"><img class="twitter-pic" height="35px"
+                        src="./web-images/twitter-img.png" alt=""></a>
+                <a href="https://www.facebook.com/"><img class="twitter-pic" height="35px" src="./web-images/fb-img.png"
+                        alt=""></a>
+                <a href="https://www.instagram.com/"><img class="twitter-pic" height="35px"
+                        src="./web-images/insta-img.png" alt=""></a>
+                <a href="https://github.com/"><img class="twitter-pic" height="35px" src="./web-images/github-img.png"
+                        alt=""></a>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p class="ft-end1"><span>License</span>
+                |
+                <span>Style Guide</span>
+                |
+                <span>Customize</span>
+            </p>
+            <p class="ft-end2">
+                <span>Copyright ©</span>
+
+                <span>Design & Developed by
+                    <span class="dev-name">Chetan Gautam</span>
+                </span>
+
+            </p>
         </div>
 
-        <div class="footer">
-            <div class="footer-up">
-                <img class="footer-logo" src="./web-images/logo.svg" alt="">
-
-                <div class="footerup-middle">
-                    <ul>
-                        <li>Explore</li>
-                        <li>Home</li>
-                        <li>Products</li>
-                    </ul>
-                    <ul>
-                        <li>Support</li>
-                        <li>FAQ</li>
-                        <li>Contact</li>
-                    </ul>
-                    <ul>
-                        <li>Others</li>
-                        <li>Style Guide</li>
-                        <li>Changelog</li>
-                    </ul>
-                    <ul>
-                        <li>Utility</li>
-                        <li>Instruction</li>
-                        <li>License</li>
-                    </ul>
-
-                </div>
-                <div class="footerup-imgs">
-                    <img class="twitter-pic" height="35px" src="./web-images/twitter-img.png" alt="">
-                    <img class="twitter-pic" height="35px" src="./web-images/fb-img.png" alt="">
-                    <img class="twitter-pic" height="35px" src="./web-images/insta-img.png" alt="">
-                    <img class="twitter-pic" height="35px" src="./web-images/github-img.png" alt="">
-                </div>
-            </div>
-            <div class="footer-end">
-                <p class="ft-end1"><span>License</span>
-                    |
-                    <span>Style Guide</span>
-                    |
-                    <span>Customize</span>
-                </p>
-                <p class="ft-end2">
-                    <span>Copyright ©</span>
-
-                    <span>Design & Developed by
-                        <span class="dev-name">Chetan Gautam</span>
-                    </span>
-
-                </p>
-            </div>
-
-        </div>
-        <script src="./script.js"></script>
+    </div>
+    <script src="./script.js"></script>
 </body>
-    <!-- <script src="https://unpkg.com/@studio-freight/lenis@latest/dist/lenis.min.js"></script>
-        <script>
-            const lenis = new Lenis({
-                smooth: true,  
-                lerp: 0.1,    
-                duration: 1.2,
-                wheelMultiplier: 1.2,
-            });
+<script src="https://unpkg.com/@studio-freight/lenis@latest/dist/lenis.min.js"></script>
+<script>const lenis = new Lenis({
+        smooth: true,
+        lerp: 0.1,
+        duration: 1.2,
+        wheelMultiplier: 1.2,
+        normalizeWheel: true,
+    });
 
-            function raf(time) {
-                lenis.raf(time);
-                requestAnimationFrame(raf);
-            }
-            requestAnimationFrame(raf);
-        </script> -->
+    // Prevent Lenis from interfering with inner scrollable elements
+    document.querySelectorAll('[data-lenis-prevent]').forEach((el) => {
+        el.addEventListener('wheel', (event) => event.stopPropagation());
+    });
+
+    // Animation frame loop
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+</script>
+
 </html>

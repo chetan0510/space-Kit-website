@@ -51,4 +51,12 @@ function faq5data() {
 
 }
 
+function inputbdr(element) {
+    document.querySelectorAll('input, textarea').forEach(function(input) {
+        input.style.border = "none";
+        input.style.borderRadius = "0";
+    });
 
+    element.style.border = "1px solid orange";
+    element.style.borderRadius = "10px";
+} 

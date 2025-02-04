@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./web-images/favicon-img.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/mobile.css">
+    <link rel="stylesheet" href="./contact.css">
+
+    <title>Space Kit</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <img class="logo" src="./web-images/logo.svg" alt="">
+        <div class="navpages ">
+            <a href="./">Home</a>
+            <a href="./product-pages/allprdts.html">Products</a>
+            <a href="./product-pages/faq.html">FAQ</a>
+            <button class="contact">Contact Us</button>
+        </div>
+        <img class="hamburger" src="./web-images/hamburger-img.png" alt="" onclick="phonenavbar()">
+    </div>
+    <!-- mobile shutter -->
+    <div class="shutter-box">
+    </div>
+    <div class="navpages-mobile  navpages-close" id="hamburger">
+        <a href="./">Home</a>
+        <a href="./product-pages/allprdts.html">Products</a>
+        <a href="./product-pages/faq.html" onclick="window.location.href=''">FAQ</a>
+        <a href="./contact.html"><button class="contact" >Contact Us
+        </button></a>
+    </div>
+
+    <div class="con-div">
+        <p class="con-head">Have questions or <span> need support?</span></p>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name" onclick="inputbdr(this)">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your e-mail" onclick="inputbdr(this)">
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="your message..." onclick="inputbdr(this)"></textarea>
+            
+            <button class="submit-btn" type="submit">CONTACT US</button >
+        </form>
+    </div>
+    <div class="footer">
+        <div class="footer-up">
+            <img class="footer-logo" src="./web-images/logo.svg" alt="">
+
+            <div class="footerup-middle">
+                <ul>
+                    <li>Explore</li>
+                    <li onclick="window.location.href='/'">Home</li>
+                    <li onclick="window.location.href='./product-pages/allprdts.html'">Products</li>
+                </ul>
+                <ul>
+                    <li>Support</li>
+                    <li onclick="window.location.href='./product-pages/faq.html'">FAQ</li>
+                    <li>Contact</li>
+                </ul>
+                <ul>
+                    <li>Others</li>
+                    <li>Style Guide</li>
+                    <li>Changelog</li>
+                </ul>
+                <ul>
+                    <li>Utility</li>
+                    <li>Instruction</li>
+                    <li>License</li>
+                </ul>
+
+            </div>
+            <div class="footerup-imgs">
+                <a href="https://x.com/Realiizzz"><img class="twitter-pic" height="35px"
+                        src="./web-images/twitter-img.png" alt=""></a>
+                <a href="https://www.facebook.com/"><img class="twitter-pic" height="35px" src="./web-images/fb-img.png"
+                        alt=""></a>
+                <a href="https://www.instagram.com/"><img class="twitter-pic" height="35px"
+                        src="./web-images/insta-img.png" alt=""></a>
+                <a href="https://github.com/"><img class="twitter-pic" height="35px" src="./web-images/github-img.png"
+                        alt=""></a>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p class="ft-end1"><span>License</span>
+                |
+                <span>Style Guide</span>
+                |
+                <span>Customize</span>
+            </p>
+            <p class="ft-end2">
+                <span>Copyright ©</span>
+
+                <span>Design & Developed by
+                    <span class="dev-name">Chetan Gautam</span>
+                </span>
+
+            </p>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+<script src="https://unpkg.com/@studio-freight/lenis@latest/dist/lenis.min.js"></script>
+<script>const lenis = new Lenis({
+        smooth: true,
+        lerp: 0.1,
+        duration: 1.2,
+        wheelMultiplier: 1.2,
+        normalizeWheel: true,
+    });
+
+    // Prevent Lenis from interfering with inner scrollable elements
+    document.querySelectorAll('[data-lenis-prevent]').forEach((el) => {
+        el.addEventListener('wheel', (event) => event.stopPropagation());
+    });
+
+    // Animation frame loop
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+</script>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

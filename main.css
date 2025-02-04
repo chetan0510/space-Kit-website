@@ -995,11 +995,11 @@ body {
 }
 
 .container4 {
-    height: 600px;
+    max-height: 600px;
     width: 100%;
     background-color: rgb(239, 239, 239);
     display: flex;
-    overflow-y: scroll;
+    overflow-y: auto;
     gap: 10px;
     scrollbar-width: none;
     position: relative;
@@ -1021,7 +1021,7 @@ body {
 }
 
 .con4right {
-    height: 2600px; 
+    height: 2600px;
     width: 50%;
     background-color: rgb(239, 239, 239);
 }

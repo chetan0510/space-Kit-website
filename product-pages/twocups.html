@@ -4,27 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../main.css">
     <link rel="shortcut icon" href="../web-images/favicon-img.png" type="image/x-icon">
-    <link rel="stylesheet" href="../mobile.css">
 
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/mobile.css">
+    <link rel="stylesheet" href="explorerbag.css">
     <title>Space Kit</title>
 </head>
 
 <body>
-
     <div class="navbar">
         <img class="logo" src="../web-images/logo.svg" alt="">
         <div class="navpages ">
-            <a href="../index.html">Home</a>
-            <a href="">Products</a>
+            <a href="/">Home</a>
+            <a href="./allprdts.html">Products</a>
             <a href="./faq.html">FAQ</a>
             <button class="contact">Contact Us</button>
         </div>
         <img class="hamburger" src="../web-images/hamburger-img.png" alt="" onclick="phonenavbar()">
     </div>
+    <!-- mobile shutter -->
+    <div class="shutter-box">
+    </div>
+    <div class="navpages-mobile  navpages-close" id="hamburger">
+        <a onclick="">Home</a>
+        <a href="">Products</a>
+        <a href="./faq.html" onclick="window.location.href=''">FAQ</a>
+        <button class="contact">Contact Us
+        </button>
+    </div>
 
-    <div class="container7" style="padding-top: 70px;">
+    <div class="explorer-up">
+        <div class="exp-left">
+
+        </div>
+        <div class="exp-right">
+            <p class="right-txt">The Morning Brew Mug isn’t just your average mug</p>
+            
+            <p>With a 12-ounce capacity, the Morning Brew Mug is perfectly sized for your favorite beverages, from coffee and tea to hot chocolate or even a calming herbal infusion.</p>
+            <p class="exp-pricetag">WHITE/ORANGE <span>💨STARTS AT <span>$32</span></span> </p>
+            <button class="exp-buynow" onclick="window.location.href='./allprdts.html'"><span>BUY NOW</span>  
+                <img class="right-ar"
+                src="./products-imgs/rightside-img.png" alt=""></button>
+        </div>
+    </div>
+    <div class="container7">
         <div class="faq-title">
             <p>Frequently asked questions</p>
         </div>
@@ -91,12 +115,12 @@
             <div class="footerup-middle">
                 <ul>
                     <li>Explore</li>
-                    <li>Home</li>
-                    <li>Products</li>
+                    <li onclick="window.location.href='/'">Home</li>
+                    <li onclick="window.location.href='./allprdts.html'">Products</li>
                 </ul>
                 <ul>
                     <li>Support</li>
-                    <li>FAQ</li>
+                    <li onclick="window.location.href='./faq.html'">FAQ</li>
                     <li>Contact</li>
                 </ul>
                 <ul>
@@ -112,10 +136,14 @@
 
             </div>
             <div class="footerup-imgs">
-                <img class="twitter-pic" height="35px" src="../web-images/twitter-img.png" alt="">
-                <img class="twitter-pic" height="35px" src="../web-images/fb-img.png" alt="">
-                <img class="twitter-pic" height="35px" src="../web-images/insta-img.png" alt="">
-                <img class="twitter-pic" height="35px" src="../web-images/github-img.png" alt="">
+                <a href="https://x.com/Realiizzz"><img class="twitter-pic" height="35px"
+                        src="../web-images/twitter-img.png" alt=""></a>
+                <a href="https://www.facebook.com/"><img class="twitter-pic" height="35px" src="../web-images/fb-img.png"
+                        alt=""></a>
+                <a href="https://www.instagram.com/"><img class="twitter-pic" height="35px"
+                        src="../web-images/insta-img.png" alt=""></a>
+                <a href="https://github.com/"><img class="twitter-pic" height="35px" src="../web-images/github-img.png"
+                        alt=""></a>
             </div>
         </div>
         <div class="footer-end">
@@ -134,10 +162,21 @@
 
             </p>
         </div>
+    </body>
+    <script src="../script.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@latest/dist/lenis.min.js"></script>
+<script>
+    const lenis = new Lenis({
+        smooth: true,
+        lerp: 0.1,
+        duration: 1.2,
+        wheelMultiplier: 1.2,
+    });
 
-    </div>
-
-</body>
-<script src="../script.js"></script>
-
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+</script>
 </html>
